@@ -220,3 +220,159 @@ const obj2= {module: 35, video:2};
 console.log(obj1 === obj2);
 
 const getGirlFriend= (name = "chokina")=>"name"; console.log(getGirlFriend())
+
+function add(a,b){
+    return a+b;
+}
+console.log(add(10,20));
+myFullName("Rifat")
+
+function prints(){
+    console.log(5);
+}
+prints();
+
+function myNameIs(){
+    console.log("I am Abu Al Shahriar Rifat");
+}
+myNameIs();
+function myFullName(name){
+    console.log("My Full Name is",name)
+}
+
+function Kitchen(){
+    let roast=0;
+    return function(){
+        roast++;
+        return roast;
+    }
+}
+const firstServer=Kitchen();
+console.log(firstServer());
+console.log(firstServer());
+console.log(firstServer());
+console.log(firstServer());
+
+function stopWatch(){
+    let counter=0;
+    return function(){
+        counter++;
+        return counter;
+    }
+}
+
+const countIs=stopWatch();
+console.log(countIs());
+
+
+function greetings(Person){
+    console.log('I am'+Person)
+}
+greetings("Abu Al Shahriar Rifat");
+
+function my()
+{
+    const Laptop={
+    price:45000,
+    brand:'Lenovo',
+    memory:'8gb',
+}
+}
+
+
+function greeting(gretingHandler,name){
+ console.log(gretingHandler(name));
+}
+const  name={name:"Shahriar",profession:"Software Enginner"}
+
+
+ function gretingHandler(name){
+    console.log('Good Morning',name);
+ }
+ function greetEvening(name){
+    console.log("Good Evening",name)
+ }
+ function goodNight(name){
+    console.log("Good Night",name);
+ }
+greeting(gretingHandler,'Abu Al Shahriar Rifat');
+greeting(gretingHandler,"Karim");
+greeting(gretingHandler,'Tom cruise');
+greeting(greetEvening,'Rifat');
+greeting(greetEvening,"Rifat");
+greeting(goodNight,"Abu Al Shahriar Rifat");
+
+
+
+function myName(NameHandler,name){
+    NameHandler(name);
+}
+
+function NameHandler(name){
+    console.log("hello",name)
+}
+
+myName(NameHandler,"Rifat")
+myName(NameHandler,"Rofiq")
+
+function sumIsss(a,b,c){
+    const result=a+b+c;
+    console.log(arguments);
+    const args=[...arguments];
+    console.log(args);
+    return result;
+}
+const mysum=sumIsss(10,20,30,70,80);
+console.log(mysum);
+
+let num1=5;
+let num2=7;
+function mul(a,b){
+    const result=a*b;
+    return result;
+}
+
+const output_1=mul(10,20);
+console.log(output_1);
+
+let student111={name:"Rifat",partner:"sh"};
+let student112={name:"shah",partner:"rifat"};
+
+function makeMovie(couple_1,couple_2){
+    couple_1.name="Ononto";
+    couple_2.partner="mim";
+
+}
+console.log(student111,student112);
+makeMovie(student111,student112);
+console.log(student111,student112)
+console.log(typeof null)
+
+let p='Javascript'; 
+let q=p; 
+p='React'; 
+console.log(q); 
+
+const isTrue='false'; 
+if(!isTrue){
+console.log('hello');
+} else {
+console.log('world'); 
+}
+
+function sumIs(p, q) {
+    p + q;
+   }
+   const result = sumIs(2, 3);
+   console.log(result);
+
+   if ("2" === 2) {
+    console.log("Inside if");
+   } else {
+    console.log("Inside else");
+   }
+
+   function work(x, y = 4) {
+    return x + y;
+   }
+   console.log(work(32))
